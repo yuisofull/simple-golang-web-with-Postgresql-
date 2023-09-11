@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a:link {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+      }
+    </style>
+  </head> 
+<body>
+
+<h2>Update Product</h2>
+
+<form action="/updateresult/?userid={{.ID}}" method="POST">
+    <label for="nameID">Name:</label><br>
+    <input type="text" id="nameID" name="nameName" value="{{.Name}}"><br>
+    <label for="emailID">Email:</label><br>
+    <input type="text" id="emailID" name="nameEmail" value="{{.Email}}"><br>
+    <label for="sexID">Sex:</label>
+    {{if (eq .Sex 1)}}
+    <input type="radio" id="sexID" name="nameSex" value="1" checked>Male
+    <input type="radio" id="sexID" name="nameSex" value="2">Female<br>
+    {{else}}
+    <input type="radio" id="sexID" name="nameSex" value="1">Male
+    <input type="radio" id="sexID" name="nameSex" value="2" checked>Female<br>
+    {{end}}
+    <label for="interestID">Interest:</label><br>
+    <input type="text" id="interestID" name="nameInterest" placeholder="Not Required" value="{{.Interest}}"><br>
+    <input type="submit" value="Update User">
+</form>
+<br><br>
+
+{{if .Noti}}
+  <h2>{{.Noti}}</h2>
+{{end}}
+
+<br>
+<a href="/browse">Browse Products</a>
+
+</body>
+</html>
