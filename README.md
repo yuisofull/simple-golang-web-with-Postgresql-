@@ -58,7 +58,7 @@ The application will start and listen on `http://localhost:9000`. You can access
 ### Adding a User
 
 1. Access the application in your web browser (`http://localhost:9000`).
-2. Click on the "Add User" link in the navigation bar.
+2. Click on the "Add User".
 3. Fill in the user details (Name, Email, Sex, and Interest) in the form.
 4. Click the "Submit" button to add the user to the database.
 
@@ -70,7 +70,7 @@ The application will start and listen on `http://localhost:9000`. You can access
 ### Updating a User
 
 1. Access the application in your web browser (`http://localhost:9000`).
-2. Click on the "Update User" link in the navigation bar.
+2. Click on the "Update User".
 3. Enter the User ID of the user you want to update.
 4. Modify the user details in the form.
 5. Click the "Submit" button to update the user's information.
@@ -78,9 +78,7 @@ The application will start and listen on `http://localhost:9000`. You can access
 ### Deleting a User
 
 1. Access the application in your web browser (`http://localhost:9000`).
-2. Click on the "Delete User" link in the navigation bar.
-3. Enter the User ID of the user you want to delete.
-4. Click the "Delete" button to remove the user from the database.
+2. Click the "Delete" button to remove the user from the database.
 
 ## Important Notes
 
